@@ -20,7 +20,7 @@ remove.addEventListener('click', () => {
 
 let checkOutButton = document.querySelector('#checkOutButton')
 checkOutButton.addEventListener('click', () => {
-    if (rval !== null) {
+    if (rval.val != null) {
         alert("Your Order Has Been Placed Successfully")
     } else {
         alert("Please Add Something In Your Cart  ")
