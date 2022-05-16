@@ -14,5 +14,23 @@ let td = document.querySelector('#singleItem')
 
 remove.addEventListener('click', () => {
     td.remove();
+    alert('You removed the item ')
 
+})
+
+let checkOutButton = document.querySelector('#checkOutButton')
+checkOutButton.addEventListener('click', () => {
+    if (rval !== null) {
+        alert("Your Order Has Been Placed Successfully")
+    } else {
+        alert("Please Add Something In Your Cart  ")
+
+
+    }
+})
+
+
+let couponButton = document.querySelector('#couponButton');
+couponButton.addEventListener('click', function() {
+    alert("Invalid coupon , Coupon may  expired or not valid")
 })
